@@ -2,6 +2,7 @@ import 'package:api_and_login/res/Color.dart';
 import 'package:api_and_login/config/get_it_config.dart';
 import 'package:api_and_login/git_%20data_api_url/data_api.dart';
 import 'package:api_and_login/main.dart';
+import 'package:api_and_login/res/String.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,7 +27,7 @@ class IconLogIn extends StatelessWidget {
                 decoration:
                     BoxDecoration(shape: BoxShape.circle, border: Border.all()),
                 child:  Text(
-                  'LOGIN',
+                  LOGIN,
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w700,
@@ -64,10 +65,10 @@ class TextFieldEmail extends StatelessWidget {
         ),
         child: TextField(
           controller: name,
-          decoration: const InputDecoration(
+          decoration:  InputDecoration(
             border: InputBorder.none,
-            suffixIcon: Icon(Icons.email),
-            hintText: '  ahmad@gmail.com',
+            suffixIcon: const Icon(Icons.email),
+            hintText:   ahmadgmail,
           ),
         ),
       ),
@@ -92,7 +93,7 @@ class TextFieldPassword extends StatelessWidget {
           controller: password,
           obscureText: false,
           decoration: InputDecoration(
-            hintText: '***********',
+            hintText: pas,
             suffixIcon: const Icon(Icons.visibility),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
