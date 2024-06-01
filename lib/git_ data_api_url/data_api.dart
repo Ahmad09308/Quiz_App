@@ -93,7 +93,7 @@ class QuizApp extends StatelessWidget {
                                               duration: Duration(seconds: 2),
                                               behavior:
                                                   SnackBarBehavior.floating,
-                                              content: Text(
+                                              content: const Text(
                                                 "🤩",
                                                 style: TextStyle(
                                                     fontSize: 25,
